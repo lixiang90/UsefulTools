@@ -7,6 +7,9 @@ import base64
 import openai
 import yaml
 import schedule
+import os
+
+os.makedirs('screenshots', exist_ok=True)
 
 app = Application(backend="uia").connect(title_re=".*QQ.*", timeout=5)
 with open("llm.yaml", "r") as f:
