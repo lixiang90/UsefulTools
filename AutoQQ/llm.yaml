@@ -1,0 +1,4 @@
+llm:
+    key: "your api key"
+    base: "your api base url"
+    model_id: "your model id"
